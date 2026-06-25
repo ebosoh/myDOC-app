@@ -53,10 +53,10 @@ function getUserAccess(clientArg) {
 
   // Define module access by role
   const rolePermissions = {
-    'ADMIN': ['dashboard', 'registration', 'triage', 'diagnosis', 'lab', 'finance', 'reports', 'family-planning', 'patient-history'],
+    'ADMIN': ['dashboard', 'registration', 'triage', 'diagnosis', 'lab', 'lab-inventory', 'finance', 'reports', 'family-planning', 'patient-history'],
     'DOCTOR': ['dashboard', 'triage', 'diagnosis', 'reports', 'family-planning', 'patient-history'],
     'NURSE': ['registration', 'triage'],
-    'LAB TECH': ['lab'],
+    'LAB TECH': ['lab', 'lab-inventory'],
     'FINANCE': ['finance', 'patient-history']
   };
 
