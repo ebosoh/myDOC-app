@@ -1289,6 +1289,29 @@
             </div>
           </form>
         </div>
+
+        <!-- Recent Registrations Card -->
+        <div class="card" style="margin-top: 2rem;">
+          <h3>Recent Registrations</h3>
+          <div class="table-responsive" style="max-height: 350px; overflow-y: auto;">
+            <table id="patients-table">
+              <thead>
+                <tr>
+                  <th>Patient ID</th>
+                  <th>Name</th>
+                  <th>Phone</th>
+                  <th>Gender</th>
+                  <th>Registered Date</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td colspan="5">Loading...</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
       </div>
 
       <!-- Triage View -->
@@ -2816,7 +2839,7 @@
       if (viewId === 'dashboard') {
         loadDashboardMetrics(); // Load statistics and live queues
       } else if (viewId === 'registration') {
-        // Registration page loads recent patients automatically
+        loadRecentPatients();
       } else if (viewId === 'triage') {
         loadTriageQueue();
       } else if (viewId === 'diagnosis') {

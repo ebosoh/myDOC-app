@@ -27,12 +27,14 @@ const SHEET_CONFIG = {
     'patient_id', 'registration_date', 'national_id', 'NHIF_no', 'first_name', 'middle_name',
     'last_name', 'date_of_birth', 'gender', 'marital_status', 'phone_number', 'email',
     'county', 'sub_county', 'ward', 'language', 'next_of_kin', 'NOK_relationship',
-    'NOK_phone', 'blood_group', 'known_allergies', 'is_active', 'registered_by_staff_ID'
+    'NOK_phone', 'blood_group', 'known_allergies', 'is_active', 'registered_by_staff_ID',
+    'disability_status', 'village'
   ],
   'Triage_Records': [
     'encounter_id', 'patient_id', 'triage_date_time', 'chief_complain', 'complain_duration',
     'bp_systolic', 'bp_diastolic', 'heart_rate_bpm', 'resp_rate_breaths', 'temp_c',
-    'oxygen_saturation', 'weight', 'height', 'BMI', 'triage_priority', 'triage_nurse_id'
+    'oxygen_saturation', 'weight', 'height', 'BMI', 'triage_priority', 'triage_nurse_id',
+    'allergies', 'chronic_diseases', 'service_point'
   ],
   'Treatment_Records': [
     'treatment_id', 'encounter_id', 'patient_id', 'doctor_id', 'visit_date_time',
